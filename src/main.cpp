@@ -83,15 +83,15 @@ int main() {
     glDeleteShader(fragmentShader);
 
     float vertices[] = {
-    // first triangle 
-    -0.5f,  0.2f, 0.0f,  // Vertex 1: Top-Left corner
-    -0.5f, -0.2f, 0.0f,  // Vertex 2: Bottom-Left corner
-     0.5f, -0.2f, 0.0f,  // Vertex 3: Bottom-Right corner
+    // First Triangle
+    -10.0f,  60.0f, 0.0f,  // Top-Left (-10px to +60px)
+    -10.0f, -60.0f, 0.0f,  // Bottom-Left
+     10.0f, -60.0f, 0.0f,  // Bottom-Right
 
-    //  second triangle
-     0.5f, -0.2f, 0.0f,  // Vertex 4: Bottom-Right corner
-     0.5f,  0.2f, 0.0f,  // Vertex 5: Top-Right corner
-    -0.5f,  0.2f, 0.0f   // Vertex 6: Top-Left corner
+    // Second Triangle
+     10.0f, -60.0f, 0.0f,  // Bottom-Right
+     10.0f,  60.0f, 0.0f,  // Top-Right
+    -10.0f,  60.0f, 0.0f   // Top-Left
     };
 
     unsigned int VBO, VAO;
@@ -140,24 +140,23 @@ int main() {
 
     // X movement offset for uniform
     float offsetX = 0.0f;
-    float aspect = (float)width / (float)height;
+   
 
     // Game Loop
-    while (!glfwWindowShouldClose(window)) {
+        while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
-        float maxOffset = 1.0f - (0.5f / aspect);
-        float minOffset = -1.0f + (0.5f / aspect);
+    
 
         if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
-            offsetX -= 0.01f;
-            if (offsetX < minOffset) offsetX = minOffset;
+            offsetX -= 5.0f;
+            
         }
 
         if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
-            offsetX += 0.01f;
-            if (offsetX > maxOffset) offsetX = maxOffset;
+            offsetX += 5.0f;
+            
         }
 
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
@@ -166,14 +165,15 @@ int main() {
        
         glUseProgram(shaderProgram);
 
-        int offsetLocation = glGetUniformLocation(shaderProgram, "offsetX");
+        glUniform2f(glGetUniformLocation(shaderProgram, "screenSize"), 800.0f, 600.0f);
+        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, 0);
 
-        int aspectLocation = glGetUniformLocation(shaderProgram, "aspect");
+      
+        
+        
+       
 
         
-        glUniform1f(offsetLocation, offsetX);
-
-        glUniform1f(aspectLocation, aspect);
 
         glBindVertexArray(VAO); 
         glDrawArrays(GL_TRIANGLES, 0, 6);
