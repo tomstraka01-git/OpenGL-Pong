@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /home/tom/Desktop/Projects/OpenGL-Pong/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Pong.dir/all
+all: CMakeFiles/OpenGLPong.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Pong.dir/codegen
+codegen: CMakeFiles/OpenGLPong.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Pong.dir/clean
+clean: CMakeFiles/OpenGLPong.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Pong.dir
+# Target rules for target CMakeFiles/OpenGLPong.dir
 
 # All Build rule for target.
-CMakeFiles/Pong.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles --progress-num=1,2 "Built target Pong"
-.PHONY : CMakeFiles/Pong.dir/all
+CMakeFiles/OpenGLPong.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLPong.dir/build.make CMakeFiles/OpenGLPong.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLPong.dir/build.make CMakeFiles/OpenGLPong.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles --progress-num=1,2,3 "Built target OpenGLPong"
+.PHONY : CMakeFiles/OpenGLPong.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Pong.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Pong.dir/all
+CMakeFiles/OpenGLPong.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OpenGLPong.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles 0
-.PHONY : CMakeFiles/Pong.dir/rule
+.PHONY : CMakeFiles/OpenGLPong.dir/rule
 
 # Convenience name for target.
-Pong: CMakeFiles/Pong.dir/rule
-.PHONY : Pong
+OpenGLPong: CMakeFiles/OpenGLPong.dir/rule
+.PHONY : OpenGLPong
 
 # codegen rule for target.
-CMakeFiles/Pong.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Pong"
-.PHONY : CMakeFiles/Pong.dir/codegen
+CMakeFiles/OpenGLPong.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLPong.dir/build.make CMakeFiles/OpenGLPong.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target OpenGLPong"
+.PHONY : CMakeFiles/OpenGLPong.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Pong.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/clean
-.PHONY : CMakeFiles/Pong.dir/clean
+CMakeFiles/OpenGLPong.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLPong.dir/build.make CMakeFiles/OpenGLPong.dir/clean
+.PHONY : CMakeFiles/OpenGLPong.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

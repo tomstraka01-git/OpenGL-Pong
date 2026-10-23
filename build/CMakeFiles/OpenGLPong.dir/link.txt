@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/OpenGLPong.dir/link.d CMakeFiles/OpenGLPong.dir/src/main.cpp.o CMakeFiles/OpenGLPong.dir/src/glad.c.o -o OpenGLPong  /usr/lib/x86_64-linux-gnu/libglfw.so.3.4 /usr/lib/x86_64-linux-gnu/libGL.so

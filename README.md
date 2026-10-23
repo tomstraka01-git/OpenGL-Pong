@@ -5,4 +5,4 @@ OpenGL-Pong
 cd build
 cmake ..
 make
-./Pong
+GDK_BACKEND=x11 ./OpenGLPong

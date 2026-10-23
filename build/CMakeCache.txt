@@ -151,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=OpenGL-Pong
+CMAKE_PROJECT_NAME:STATIC=OpenGLPong
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -271,6 +271,15 @@ OpenGL-Pong_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 OpenGL-Pong_SOURCE_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong
+
+//Value Computed by CMake
+OpenGLPong_BINARY_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong/build
+
+//Value Computed by CMake
+OpenGLPong_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+OpenGLPong_SOURCE_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong
 
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/glfw3
