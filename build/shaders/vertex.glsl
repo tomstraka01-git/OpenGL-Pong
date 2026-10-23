@@ -2,7 +2,12 @@
 layout (location = 0) in vec3 aPos;
 
 uniform float offsetX;
+uniform float aspect;
 
 void main() {
-    gl_Position = vec4(aPos.x + offsetX, aPos.y, aPos.z, 1.0);
+  
+    float scaledX = aPos.x / aspect;
+    
+   
+    gl_Position = vec4(scaledX + offsetX, aPos.y, aPos.z, 1.0);
 }

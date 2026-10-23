@@ -29,6 +29,10 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
     glViewport(0, 0, width, height);
 }
 
+int width = 800;
+
+int height = 600;
+
 int main() {
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
@@ -39,7 +43,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Pong", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(width, height, "OpenGL Pong", NULL, NULL);
     if (window == NULL) {
         std::cerr << "Failed to create GLFW window\n";
         glfwTerminate();
@@ -136,19 +140,24 @@ int main() {
 
     // X movement offset for uniform
     float offsetX = 0.0f;
-
+    float aspect = (float)width / (float)height;
 
     // Game Loop
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
+        float maxOffset = 1.0f - (0.5f / aspect);
+        float minOffset = -1.0f + (0.5f / aspect);
+
         if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
-            offsetX += 0.1f;
+            offsetX -= 0.01f;
+            if (offsetX < minOffset) offsetX = minOffset;
         }
 
         if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
-            offsetX -= 0.1f;
+            offsetX += 0.01f;
+            if (offsetX > maxOffset) offsetX = maxOffset;
         }
 
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
@@ -157,10 +166,14 @@ int main() {
        
         glUseProgram(shaderProgram);
 
-        int vertexLocation = glGetUniformLocation(shaderProgram, "offsetX");
+        int offsetLocation = glGetUniformLocation(shaderProgram, "offsetX");
 
-        glUniform1f(vertexLocation, offsetX);
+        int aspectLocation = glGetUniformLocation(shaderProgram, "aspect");
 
+        
+        glUniform1f(offsetLocation, offsetX);
+
+        glUniform1f(aspectLocation, aspect);
 
         glBindVertexArray(VAO); 
         glDrawArrays(GL_TRIANGLES, 0, 6);
