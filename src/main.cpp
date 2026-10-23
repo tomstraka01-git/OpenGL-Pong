@@ -79,9 +79,15 @@ int main() {
     glDeleteShader(fragmentShader);
 
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-         0.5f, -0.5f, 0.0f,
-         0.0f,  0.5f, 0.0f
+    // first triangle 
+    -0.5f,  0.2f, 0.0f,  // Vertex 1: Top-Left corner
+    -0.5f, -0.2f, 0.0f,  // Vertex 2: Bottom-Left corner
+     0.5f, -0.2f, 0.0f,  // Vertex 3: Bottom-Right corner
+
+    //  second triangle
+     0.5f, -0.2f, 0.0f,  // Vertex 4: Bottom-Right corner
+     0.5f,  0.2f, 0.0f,  // Vertex 5: Top-Right corner
+    -0.5f,  0.2f, 0.0f   // Vertex 6: Top-Left corner
     };
 
     unsigned int VBO, VAO;
@@ -100,7 +106,9 @@ int main() {
  
     glBindBuffer(GL_ARRAY_BUFFER, 0); 
     glBindVertexArray(0); 
+    
 
+    // Debugging 
     int success;
 
     char infoLog[512];
@@ -126,7 +134,7 @@ int main() {
         std::cerr << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << "\n";
     }
 
-
+    // Game Loop
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
@@ -138,7 +146,7 @@ int main() {
        
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO); 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
