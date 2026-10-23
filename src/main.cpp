@@ -134,17 +134,34 @@ int main() {
         std::cerr << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << "\n";
     }
 
+    // X movement offset for uniform
+    float offsetX = 0.0f;
+
+
     // Game Loop
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
-      
+        if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+            offsetX += 0.1f;
+        }
+
+        if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
+            offsetX -= 0.1f;
+        }
+
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
        
         glUseProgram(shaderProgram);
+
+        int vertexLocation = glGetUniformLocation(shaderProgram, "offsetX");
+
+        glUniform1f(vertexLocation, offsetX);
+
+
         glBindVertexArray(VAO); 
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
