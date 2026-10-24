@@ -88,15 +88,14 @@ int main() {
     glDeleteShader(fragmentShader);
 
     float vertices[] = {
-    // First Triangle
-    -10.0f,  60.0f, 0.0f,  // Top-Left (-10px to +60px)
-    -10.0f, -60.0f, 0.0f,  // Bottom-Left
-     10.0f, -60.0f, 0.0f,  // Bottom-Right
+        // Local coordinates centered around (0,0)
+        -60.0f,  10.0f, 0.0f,  // Top-Left
+        -60.0f, -10.0f, 0.0f,  // Bottom-Left
+         60.0f, -10.0f, 0.0f,  // Bottom-Right
 
-    // Second Triangle
-     10.0f, -60.0f, 0.0f,  // Bottom-Right
-     10.0f,  60.0f, 0.0f,  // Top-Right
-    -10.0f,  60.0f, 0.0f   // Top-Left
+         60.0f, -10.0f, 0.0f,  // Bottom-Right
+         60.0f,  10.0f, 0.0f,  // Top-Right
+        -60.0f,  10.0f, 0.0f   // Top-Left
     };
 
     unsigned int VBO, VAO;
@@ -144,32 +143,42 @@ int main() {
     }
 
     // X movement offset for uniform
-    float offsetX = 0.0f;
-   
+    float offsetX = 450.0f;
+    float offsetY = 100.0f;
 
+    
     // Game Loop
-        // Game Loop
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
 
         // Get live framebuffer dimensions every frame
-        int fbWidth, fbHeight;
-        glfwGetFramebufferSize(window, &fbWidth, &fbHeight);
-        float currentWidth = static_cast<float>(fbWidth);
-        float currentHeight = static_cast<float>(fbHeight);
+        int winWidth, winHeight;
+        glfwGetWindowSize(window, &winWidth, &winHeight); // Will return 800 and 600
+        float currentWidth = static_cast<float>(winWidth);
+        float currentHeight = static_cast<float>(winHeight);
 
-        float paddleHalfWidth = 10.0f;
+        float paddleHalfWidth = 160.0f; 
 
         if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
             offsetX -= 5.0f;
-            if (offsetX - paddleHalfWidth < 0.0f) offsetX = paddleHalfWidth;
+            
+            if (offsetX - paddleHalfWidth < 0.0f) {
+                offsetX = paddleHalfWidth;
+            }
         }
 
         if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
             offsetX += 5.0f;
-            if (offsetX + paddleHalfWidth > currentWidth) offsetX = currentWidth - paddleHalfWidth;
+      
+            if (offsetX + paddleHalfWidth > currentWidth) {
+                offsetX = currentWidth - paddleHalfWidth;
+            }
         }
+
+
+        std::cout << offsetX << "\n";
+        std::cout << currentWidth << "\n";
 
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -178,8 +187,10 @@ int main() {
 
         // Pass the real physical screen size to the shader
         glUniform2f(glGetUniformLocation(shaderProgram, "screenSize"), currentWidth, currentHeight);
-        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, currentHeight / 2.0f);
+        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, offsetY);
+       
 
+        
         glBindVertexArray(VAO); 
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
