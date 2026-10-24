@@ -87,33 +87,52 @@ int main() {
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
-    float vertices[] = {
-        // Local coordinates centered around (0,0)
-        -60.0f,  10.0f, 0.0f,  // Top-Left
-        -60.0f, -10.0f, 0.0f,  // Bottom-Left
-         60.0f, -10.0f, 0.0f,  // Bottom-Right
+    // 1. Paddle Shape 
+    float paddleVertices[] = {
+        -60.0f,  10.0f, 0.0f,
+        -60.0f, -10.0f, 0.0f,
+         60.0f, -10.0f, 0.0f,
 
-         60.0f, -10.0f, 0.0f,  // Bottom-Right
-         60.0f,  10.0f, 0.0f,  // Top-Right
-        -60.0f,  10.0f, 0.0f   // Top-Left
+         60.0f, -10.0f, 0.0f,
+         60.0f,  10.0f, 0.0f,
+        -60.0f,  10.0f, 0.0f
     };
 
-    unsigned int VBO, VAO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
+    // 2. Ball Shape 
+    float ballVertices[] = {
+        -10.0f,  10.0f, 0.0f,  
+        -10.0f, -10.0f, 0.0f,  
+         10.0f, -10.0f, 0.0f,  
 
-    glBindVertexArray(VAO);
+         10.0f, -10.0f, 0.0f,  
+         10.0f,  10.0f, 0.0f,  
+        -10.0f,  10.0f, 0.0f   
+    };
 
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+// Paddle VBO and VAO
+    unsigned int paddleVAO, paddleVBO;
+    glGenVertexArrays(1, &paddleVAO);
+    glGenBuffers(1, &paddleVBO);
 
-
+    glBindVertexArray(paddleVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, paddleVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(paddleVertices), paddleVertices, GL_STATIC_DRAW);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
- 
+    // Ball VAO and VBO
+    unsigned int ballVAO, ballVBO;
+    glGenVertexArrays(1, &ballVAO);
+    glGenBuffers(1, &ballVBO);
+
+    glBindVertexArray(ballVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, ballVBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(ballVertices), ballVertices, GL_STATIC_DRAW);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
     glBindBuffer(GL_ARRAY_BUFFER, 0); 
-    glBindVertexArray(0); 
+    glBindVertexArray(0);
     
 
     // Debugging 
@@ -146,7 +165,13 @@ int main() {
     float offsetX = 450.0f;
     float offsetY = 100.0f;
 
+    float ballX = 450.0f;
+    float ballY = 400.0f;
     
+    float ballVelX = 5.0f;
+    float ballVelY = 5.0f;
+    float ballHalfSize = 10.0f;
+
     // Game Loop
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
@@ -176,31 +201,38 @@ int main() {
             }
         }
 
+        // Ball movement
 
-        std::cout << offsetX << "\n";
-        std::cout << currentWidth << "\n";
+        ballX += ballVelX;
+        ballY += ballVelY;
 
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(shaderProgram);
 
-        // Pass the real physical screen size to the shader
+        // Pass the screen size uniform once per frame
         glUniform2f(glGetUniformLocation(shaderProgram, "screenSize"), currentWidth, currentHeight);
-        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, offsetY);
-       
 
-        
-        glBindVertexArray(VAO); 
+        // draw paddle
+        glBindVertexArray(paddleVAO); 
+        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, offsetY);
+        glDrawArrays(GL_TRIANGLES, 0, 6);
+
+        // draw ball
+        glBindVertexArray(ballVAO); 
+        glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), ballX, ballY);
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
-    
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    // Clean up vbo and vao
+    glDeleteVertexArrays(1, &paddleVAO);
+    glDeleteBuffers(1, &paddleVBO);
+    glDeleteVertexArrays(1, &ballVAO);
+    glDeleteBuffers(1, &ballVBO);
     glDeleteProgram(shaderProgram);
 
     glfwTerminate();
