@@ -206,6 +206,15 @@ int main() {
         ballX += ballVelX;
         ballY += ballVelY;
 
+
+        if ((ballX + ballHalfSize) > currentWidth || (ballX - ballHalfSize) < 0) {
+            ballVelX = -ballVelX; // reverse x vel
+        }
+
+        if ((ballY + ballHalfSize) > currentHeight || (ballY - ballHalfSize) < 0) {
+            ballVelY = -ballVelY; // reverse y vel
+        }
+
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 

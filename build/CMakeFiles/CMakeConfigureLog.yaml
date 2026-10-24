@@ -20,6 +20,7 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -32,6 +33,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/tom/.wakatime/uname"
       - "/home/tom/.local/bin/uname"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/uname"
       - "/usr/local/sbin/uname"
@@ -40,6 +42,10 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -81,6 +87,7 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -93,6 +100,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/tom/.wakatime/gmake"
       - "/home/tom/.local/bin/gmake"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/gmake"
       - "/usr/local/sbin/gmake"
@@ -101,6 +109,10 @@ events:
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -140,6 +152,7 @@ events:
       - "icx"
       - "clang"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -152,6 +165,7 @@ events:
       - "/usr/local/games/"
       - "/snap/bin/"
     searched_directories:
+      - "/home/tom/.wakatime/cc"
       - "/home/tom/.local/bin/cc"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/cc"
       - "/usr/local/sbin/cc"
@@ -160,6 +174,10 @@ events:
     found: "/usr/bin/cc"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -200,6 +218,10 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -256,6 +278,7 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -269,6 +292,10 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -303,6 +330,7 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -316,6 +344,10 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -350,6 +382,7 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -363,6 +396,10 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -397,6 +434,7 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -410,6 +448,10 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -444,6 +486,7 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -457,6 +500,10 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -491,6 +538,7 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -504,6 +552,10 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -538,6 +590,7 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -551,6 +604,10 @@ events:
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -585,6 +642,7 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -598,6 +656,10 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -632,6 +694,7 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -644,6 +707,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/home/tom/.wakatime/dlltool"
       - "/home/tom/.local/bin/dlltool"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/dlltool"
       - "/usr/local/sbin/dlltool"
@@ -657,6 +721,10 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -691,6 +759,7 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -704,6 +773,10 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -738,6 +811,7 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -750,6 +824,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/tom/.wakatime/tapi"
       - "/home/tom/.local/bin/tapi"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/tapi"
       - "/usr/local/sbin/tapi"
@@ -763,6 +838,10 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -800,6 +879,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -812,6 +892,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
+      - "/home/tom/.wakatime/gcc-ar-15.2"
       - "/home/tom/.local/bin/gcc-ar-15.2"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
@@ -825,6 +906,10 @@ events:
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -862,6 +947,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -874,6 +960,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/tom/.wakatime/gcc-ranlib-15.2"
       - "/home/tom/.local/bin/gcc-ranlib-15.2"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
@@ -887,6 +974,10 @@ events:
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -933,6 +1024,10 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -973,6 +1068,10 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1032,6 +1131,7 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -1044,6 +1144,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
+      - "/home/tom/.wakatime/gcc-ar-15.2"
       - "/home/tom/.local/bin/gcc-ar-15.2"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
@@ -1057,6 +1158,10 @@ events:
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1094,6 +1199,7 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -1106,6 +1212,7 @@ events:
       - "/snap/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/tom/.wakatime/gcc-ranlib-15.2"
       - "/home/tom/.local/bin/gcc-ranlib-15.2"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
@@ -1119,6 +1226,10 @@ events:
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1141,8 +1252,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt"
-      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt"
+      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq"
+      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1151,13 +1262,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt'
+        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a685c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a685c.dir/build.make CMakeFiles/cmTC_a685c.dir/build
-        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt'
-        Building C object CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77e91/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77e91.dir/build.make CMakeFiles/cmTC_77e91.dir/build
+        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq'
+        Building C object CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1167,8 +1278,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a685c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccfCUXx1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_77e91.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc9BnWkV.s
         GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1185,14 +1296,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: edd70396dcc669433a92073f97309866
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o /tmp/ccfCUXx1.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o /tmp/cc9BnWkV.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_a685c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a685c.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_77e91
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77e91.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
@@ -1205,14 +1316,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a685c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a685c.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhp1bG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a685c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77e91' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_77e91.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrybdJA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77e91 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhp1bG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a685c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrybdJA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77e91 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a685c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a685c.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -o cmTC_a685c
-        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77e91' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_77e91.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -o cmTC_77e91
+        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq'
         
       exitCode: 0
   -
@@ -1247,13 +1358,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt']
+        ignore line: [Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a685c/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a685c.dir/build.make CMakeFiles/cmTC_a685c.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-mrlWSt']
-        ignore line: [Building C object CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77e91/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_77e91.dir/build.make CMakeFiles/cmTC_77e91.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-lX2hVq']
+        ignore line: [Building C object CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1263,8 +1374,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a685c.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccfCUXx1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-4.2/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_77e91.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc9BnWkV.s]
         ignore line: [GNU C23 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1281,14 +1392,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: edd70396dcc669433a92073f97309866]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o /tmp/ccfCUXx1.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o /tmp/cc9BnWkV.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_a685c]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a685c.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_77e91]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77e91.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
@@ -1301,13 +1412,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a685c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a685c.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhp1bG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a685c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_77e91' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_77e91.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrybdJA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77e91 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccGhp1bG.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccrybdJA.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1325,7 +1436,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_a685c] ==> ignore
+          arg [cmTC_77e91] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1340,7 +1451,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1355,7 +1466,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGhp1bG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a685c /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_a685c.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrybdJA.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_77e91 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_77e91.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1395,8 +1506,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74"
-      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74"
+      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I"
+      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1406,13 +1517,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74'
+        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8087b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8087b.dir/build.make CMakeFiles/cmTC_8087b.dir/build
-        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74'
-        Building CXX object CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_847e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_847e7.dir/build.make CMakeFiles/cmTC_847e7.dir/build
+        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I'
+        Building CXX object CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -1422,8 +1533,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8087b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc1AwPj9.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_847e7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccuoH967.s
         GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1444,14 +1555,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc1AwPj9.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuoH967.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_8087b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8087b.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_847e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_847e7.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
@@ -1464,14 +1575,14 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8087b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8087b.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFiJiY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8087b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_847e7' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_847e7.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIiRgdC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_847e7 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFiJiY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8087b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIiRgdC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_847e7 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8087b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8087b.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8087b
-        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_847e7' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_847e7.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_847e7
+        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I'
         
       exitCode: 0
   -
@@ -1512,13 +1623,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74']
+        ignore line: [Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8087b/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8087b.dir/build.make CMakeFiles/cmTC_8087b.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-O0IB74']
-        ignore line: [Building CXX object CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_847e7/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_847e7.dir/build.make CMakeFiles/cmTC_847e7.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-cwDx2I']
+        ignore line: [Building CXX object CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -1528,8 +1639,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_8087b.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cc1AwPj9.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_847e7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccuoH967.s]
         ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1550,14 +1661,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc1AwPj9.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccuoH967.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_8087b]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8087b.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_847e7]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_847e7.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
@@ -1570,13 +1681,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8087b' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8087b.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFiJiY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8087b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_847e7' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_847e7.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIiRgdC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_847e7 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccBFiJiY.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIiRgdC.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1594,7 +1705,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_8087b] ==> ignore
+          arg [cmTC_847e7] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1609,7 +1720,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1620,7 +1731,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBFiJiY.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8087b /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_8087b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIiRgdC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_847e7 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_847e7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1665,8 +1776,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw"
-      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw"
+      source: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA"
+      binary: "/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1675,17 +1786,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw'
+        Change Dir: '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ecf7f/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ecf7f.dir/build.make CMakeFiles/cmTC_ecf7f.dir/build
-        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw'
-        Building C object CMakeFiles/cmTC_ecf7f.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_ecf7f.dir/src.c.o -c /home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw/src.c
-        Linking C executable cmTC_ecf7f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf7f.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_ecf7f.dir/src.c.o -o cmTC_ecf7f
-        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-Dum0vw'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6804/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c6804.dir/build.make CMakeFiles/cmTC_c6804.dir/build
+        gmake[1]: Entering directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA'
+        Building C object CMakeFiles/cmTC_c6804.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c6804.dir/src.c.o -c /home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA/src.c
+        Linking C executable cmTC_c6804
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6804.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c6804.dir/src.c.o -o cmTC_c6804
+        gmake[1]: Leaving directory '/home/tom/Desktop/Projects/OpenGL-Pong/build/CMakeFiles/CMakeScratch/TryCompile-s67CSA'
         
       exitCode: 0
   -
@@ -1732,6 +1843,14 @@ events:
         mode: "config"
         reason: "no_exist"
       -
+        path: "/home/tom/.wakatime/glfw3Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/tom/.wakatime/glfw3-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
         path: "/home/tom/.local/glfw3Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1769,6 +1888,10 @@ events:
       version: "3.4.0"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1811,6 +1934,7 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -1844,6 +1968,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/tom/.wakatime/GL/gl.h"
       - "/home/tom/.local/bin/GL/gl.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GL/gl.h"
       - "/usr/local/sbin/GL/gl.h"
@@ -1862,6 +1987,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1906,6 +2035,7 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -1936,6 +2066,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/GL/glx.h"
       - "/home/tom/.local/bin/GL/glx.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GL/glx.h"
       - "/usr/local/sbin/GL/glx.h"
@@ -1954,6 +2085,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -1998,6 +2133,7 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2028,6 +2164,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/EGL/egl.h"
       - "/home/tom/.local/bin/EGL/egl.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/EGL/egl.h"
       - "/usr/local/sbin/EGL/egl.h"
@@ -2046,6 +2183,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2090,6 +2231,7 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2120,6 +2262,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/GLES2/gl2.h"
       - "/home/tom/.local/bin/GLES2/gl2.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GLES2/gl2.h"
       - "/usr/local/sbin/GLES2/gl2.h"
@@ -2138,6 +2281,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2182,6 +2329,7 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2212,6 +2360,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/GLES3/gl3.h"
       - "/home/tom/.local/bin/GLES3/gl3.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GLES3/gl3.h"
       - "/usr/local/sbin/GLES3/gl3.h"
@@ -2230,6 +2379,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2274,6 +2427,7 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2307,6 +2461,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/tom/.wakatime/GL/xmesa.h"
       - "/home/tom/.local/bin/GL/xmesa.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GL/xmesa.h"
       - "/usr/local/sbin/GL/xmesa.h"
@@ -2342,6 +2497,10 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2386,6 +2545,7 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2416,6 +2576,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/GL/glu.h"
       - "/home/tom/.local/bin/GL/glu.h"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/GL/glu.h"
       - "/usr/local/sbin/GL/glu.h"
@@ -2434,6 +2595,10 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2478,6 +2643,7 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2508,6 +2674,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2525,6 +2692,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2569,6 +2740,8 @@ events:
     names:
       - "GLX"
     candidate_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -2628,6 +2801,8 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -2660,6 +2835,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLX.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2704,6 +2883,8 @@ events:
     names:
       - "EGL"
     candidate_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -2763,6 +2944,8 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -2795,6 +2978,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libEGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2839,6 +3026,7 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2869,6 +3057,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2886,6 +3075,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -2931,6 +3124,7 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2961,6 +3155,7 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -2990,6 +3185,7 @@ events:
       - "/opt/lib/"
       - "/opt/"
       - "/usr/lib/X11/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -3007,6 +3203,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -3052,6 +3252,7 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -3085,6 +3286,7 @@ events:
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
     searched_directories:
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/"
       - "/usr/local/sbin/"
@@ -3102,6 +3304,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLU.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"
@@ -3147,6 +3353,8 @@ events:
       - "GL"
       - "MesaGL"
     candidate_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -3212,6 +3420,8 @@ events:
       - "/usr/shlib/libglvnd/"
       - "/usr/shlib/"
     searched_directories:
+      - "/home/tom/.wakatime/libglvnd/"
+      - "/home/tom/.wakatime/"
       - "/home/tom/.local/bin/libglvnd/"
       - "/home/tom/.local/bin/"
       - "/home/tom/.nvm/versions/node/v24.21.0/bin/libglvnd/"
@@ -3244,6 +3454,10 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/tom/.wakatime"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.local/bin"
+        - "/home/tom/.wakatime"
         - "/home/tom/.local/bin"
         - "/home/tom/.nvm/versions/node/v24.21.0/bin"
         - "/home/tom/.local/bin"

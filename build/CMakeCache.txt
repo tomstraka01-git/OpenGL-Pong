@@ -264,15 +264,6 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
 //Value Computed by CMake
-OpenGL-Pong_BINARY_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong/build
-
-//Value Computed by CMake
-OpenGL-Pong_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-OpenGL-Pong_SOURCE_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong
-
-//Value Computed by CMake
 OpenGLPong_BINARY_DIR:STATIC=/home/tom/Desktop/Projects/OpenGL-Pong/build
 
 //Value Computed by CMake
