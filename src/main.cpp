@@ -163,7 +163,7 @@ int main() {
 
     // X movement offset for uniform
     float offsetX = 450.0f;
-    float offsetY = 100.0f;
+    float offsetY = 500.0f;
 
     float ballX = 450.0f;
     float ballY = 400.0f;
@@ -207,12 +207,30 @@ int main() {
         ballY += ballVelY;
 
 
-        if ((ballX + ballHalfSize) > currentWidth || (ballX - ballHalfSize) < 0) {
-            ballVelX = -ballVelX; // reverse x vel
+        if ((ballX + ballHalfSize) > currentWidth - 100|| (ballX - ballHalfSize) < 100) {
+            ballVelX = -ballVelX; // reverse x
         }
 
         if ((ballY + ballHalfSize) > currentHeight || (ballY - ballHalfSize) < 0) {
             ballVelY = -ballVelY; // reverse y vel
+        }
+        
+        // Define bounding boxes
+        float paddleLeft   = offsetX - 60.0f;
+        float paddleRight  = offsetX + 60.0f;
+        float paddleBottom = offsetY - 10.0f;
+        float paddleTop    = offsetY + 10.0f;
+
+        float ballLeft   = ballX - ballHalfSize;
+        float ballRight  = ballX + ballHalfSize;
+        float ballBottom = ballY - ballHalfSize;
+        float ballTop    = ballY + ballHalfSize;
+
+        // Paddle ball collision
+        if ((ballRight >= paddleLeft) && (ballLeft <= paddleRight) &&
+            (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
+            ballVelY = -ballVelY;
+           
         }
 
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
