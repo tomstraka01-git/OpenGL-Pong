@@ -4,6 +4,13 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <random>
+
+
+enum class GameState {
+    game,
+    gameOver
+};
 
 
 std::string loadShaderSource(const std::string& filepath) {
@@ -23,6 +30,7 @@ std::string loadShaderSource(const std::string& filepath) {
     }
 }
 
+void gameOver() {}
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
@@ -34,6 +42,18 @@ int width = 800;
 int height = 600;
 
 int main() {
+    
+    GameState state = GameState::game;
+
+    
+    std::random_device rd;
+
+    // Initialize the Standard mersenne_twister_engine with the seed
+    std::mt19937 gen(rd());
+    // set the range
+    std::uniform_real_distribution<float> distrib(-0.5f, 0.5f);
+
+
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return -1;
@@ -184,6 +204,10 @@ int main() {
         float currentHeight = static_cast<float>(winHeight);
 
         float paddleHalfWidth = 160.0f; 
+        
+
+        if (state == GameState::game) {
+
 
         if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
             offsetX -= 5.0f;
@@ -211,7 +235,7 @@ int main() {
             ballVelX = -ballVelX; // reverse x
         }
 
-        if ((ballY + ballHalfSize) > currentHeight || (ballY - ballHalfSize) < 0) {
+        if ((ballY - ballHalfSize) < 0) {
             ballVelY = -ballVelY; // reverse y vel
         }
         
@@ -230,12 +254,19 @@ int main() {
         if ((ballRight >= paddleLeft) && (ballLeft <= paddleRight) &&
             (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
             ballVelY = -ballVelY;
+            float random_num = distrib(gen);
+            ballVelX += random_num;
            
         }
-
+        
+        if ((ballY + ballHalfSize) > currentHeight) {
+            state = GameState::gameOver;
+        }
         glClearColor(0.1f, 0.1f, 0.15f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+        
 
+        
         glUseProgram(shaderProgram);
 
         // Pass the screen size uniform once per frame
@@ -253,6 +284,12 @@ int main() {
 
         glfwSwapBuffers(window);
         glfwPollEvents();
+    }
+
+    }
+
+    if (state == GameState::gameOver) {
+        std::cout << "game over";
     }
 
     // Clean up vbo and vao
