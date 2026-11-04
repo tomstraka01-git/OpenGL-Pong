@@ -74,6 +74,7 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o: /home/tom/Desktop/Projects/OpenGL-Pong/s
 CMakeFiles/OpenGLPong.dir/src/main.cpp.o: /home/tom/Desktop/Projects/OpenGL-Pong/src/main.cpp \
   /home/tom/Desktop/Projects/OpenGL-Pong/include/KHR/khrplatform.h \
   /home/tom/Desktop/Projects/OpenGL-Pong/include/glad/glad.h \
+  /home/tom/Desktop/Projects/OpenGL-Pong/include/stb_truetype.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -82,6 +83,7 @@ CMakeFiles/OpenGLPong.dir/src/main.cpp.o: /home/tom/Desktop/Projects/OpenGL-Pong
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/asm-generic/posix_types.h \
   /usr/include/asm-generic/types.h \
+  /usr/include/assert.h \
   /usr/include/c++/15/backward/binders.h \
   /usr/include/c++/15/bit \
   /usr/include/c++/15/bits/alloc_traits.h \
@@ -178,6 +180,7 @@ CMakeFiles/OpenGLPong.dir/src/main.cpp.o: /home/tom/Desktop/Projects/OpenGL-Pong
   /usr/include/c++/15/iostream \
   /usr/include/c++/15/istream \
   /usr/include/c++/15/limits \
+  /usr/include/c++/15/math.h \
   /usr/include/c++/15/new \
   /usr/include/c++/15/numeric \
   /usr/include/c++/15/ostream \
@@ -187,6 +190,7 @@ CMakeFiles/OpenGLPong.dir/src/main.cpp.o: /home/tom/Desktop/Projects/OpenGL-Pong
   /usr/include/c++/15/random \
   /usr/include/c++/15/sstream \
   /usr/include/c++/15/stdexcept \
+  /usr/include/c++/15/stdlib.h \
   /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
@@ -225,6 +229,8 @@ CMakeFiles/OpenGLPong.dir/src/main.cpp.o: /home/tom/Desktop/Projects/OpenGL-Pong
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -378,11 +384,9 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h:
 
-/usr/include/c++/15/bits/stl_algobase.h:
+/usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
 
-/usr/include/c++/15/clocale:
-
-/usr/include/c++/15/pstl/glue_numeric_defs.h:
+/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
 
 /usr/include/c++/15/bits/sstream.tcc:
 
@@ -405,8 +409,6 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/c++/15/bits/new_allocator.h:
 
 /usr/include/c++/15/bits/uses_allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/opt_random.h:
 
@@ -438,7 +440,13 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/c++/15/tr1/modified_bessel_func.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/15/math.h:
+
+/home/tom/Desktop/Projects/OpenGL-Pong/include/stb_truetype.h:
 
 /usr/include/c++/15/bits/fstream.tcc:
 
@@ -461,10 +469,6 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/15/bits/std_abs.h:
-
-/usr/include/c++/15/typeinfo:
 
 /usr/include/c++/15/debug/debug.h:
 
@@ -544,6 +548,12 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/c++/15/bits/istream.tcc:
 
+/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
+
+/usr/include/c++/15/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/bits/dlfcn.h:
+
 /usr/include/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
@@ -557,8 +567,6 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /home/tom/Desktop/Projects/OpenGL-Pong/src/glad.c:
 
 /usr/include/c++/15/bits/stl_numeric.h:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
@@ -688,6 +696,16 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
+/usr/include/c++/15/bits/std_abs.h:
+
+/usr/include/c++/15/typeinfo:
+
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/c++/15/clocale:
+
+/usr/include/c++/15/pstl/glue_numeric_defs.h:
+
 /usr/include/c++/15/bits/stl_iterator.h:
 
 /usr/include/c++/15/vector:
@@ -721,6 +739,12 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/c++/15/bits/string_view.tcc:
 
 /usr/include/c++/15/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/15/bits/uses_allocator_args.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
@@ -774,6 +798,8 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/c++/15/pstl/pstl_config.h:
 
+/usr/include/assert.h:
+
 /usr/include/c++/15/fstream:
 
 /usr/include/c++/15/random:
@@ -787,6 +813,8 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/c++/15/tr1/poly_hermite.tcc:
 
 /usr/include/c++/15/stdexcept:
+
+/usr/include/c++/15/stdlib.h:
 
 /usr/include/c++/15/string:
 
@@ -870,12 +898,6 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/15/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/dlfcn.h:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
-
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
@@ -885,8 +907,6 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -907,9 +927,3 @@ CMakeFiles/OpenGLPong.dir/src/glad.c.o:
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/c++/15/bits/uses_allocator_args.h:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:

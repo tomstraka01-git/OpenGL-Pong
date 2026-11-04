@@ -206,4 +206,7 @@ CMakeFiles/OpenGLPong.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/random.tcc /usr/include/c++/15/numeric \
  /usr/include/c++/15/bits/stl_numeric.h \
  /usr/include/c++/15/pstl/glue_numeric_defs.h \
- /usr/include/c++/15/pstl/execution_defs.h
+ /usr/include/c++/15/pstl/execution_defs.h \
+ /home/tom/Desktop/Projects/OpenGL-Pong/include/stb_truetype.h \
+ /usr/include/c++/15/math.h /usr/include/c++/15/stdlib.h \
+ /usr/include/assert.h /usr/include/string.h /usr/include/strings.h
