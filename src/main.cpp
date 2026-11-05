@@ -285,12 +285,17 @@ int main() {
 
     float baseSpeed = 7.0f;
 
+    float targetSpeed = 7.0f;
+
     // Create a distribution for a random angle between 45 and 135
     std::uniform_real_distribution<float> angleDist(0.785398f, 2.356194f);
 
     float ballVelX = 5.0f;
     float ballVelY = 5.0f;
     float ballHalfSize = 10.0f;
+
+
+    float offsetSpeed = 5.0f;
 
     int scoreInt = 0;
 
@@ -323,14 +328,15 @@ int main() {
 
         if (state == GameState::game) {
             if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
-                offsetX -= 5.0f;
+                offsetX -= offsetSpeed;
                 if (offsetX - paddleHalfWidth < 0.0f) {
                     offsetX = paddleHalfWidth;
                 }
             }
 
             if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
-                offsetX += 5.0f;
+                offsetX += offsetSpeed;
+                
                 if (offsetX + paddleHalfWidth > currentWidth) {
                     offsetX = currentWidth - paddleHalfWidth;
                 }
@@ -378,7 +384,15 @@ int main() {
         
                     scoreInt++;
                     scoreText = std::to_string(scoreInt);
-        
+
+                    if (ballVelX < 10 || ballVelY < 10) {
+                    ballVelX *= std::pow(1.01f, scoreInt);
+                    ballVelY *= std::pow(1.01f, scoreInt);
+                    
+                    offsetSpeed *= std::pow(1.01f, scoreInt);
+
+                    }
+
                     if (scoreInt > highScoreInt) {
                         highScoreInt = scoreInt;
                         highScoreText = std::to_string(highScoreInt);
@@ -448,6 +462,8 @@ int main() {
                 float randomAngle = angleDist(gen);
                 ballVelX = baseSpeed * std::cos(randomAngle);
                 ballVelY = baseSpeed * std::sin(randomAngle);
+
+                offsetSpeed = 5.0f;
 
                 state = GameState::game;
                 scoreInt = 0;
