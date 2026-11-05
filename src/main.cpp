@@ -5,6 +5,8 @@
 #include <sstream>
 #include <string>
 #include <random>
+#include <cmath>
+
 
 #define STB_TRUETYPE_IMPLEMENTATION
 #include "stb_truetype.h"
@@ -280,18 +282,30 @@ int main() {
     float ballX = 450.0f;
     float ballY = 400.0f;
     
+
+    float baseSpeed = 7.0f;
+
+    // Create a distribution for a random angle between 45 and 135
+    std::uniform_real_distribution<float> angleDist(0.785398f, 2.356194f);
+
     float ballVelX = 5.0f;
     float ballVelY = 5.0f;
     float ballHalfSize = 10.0f;
 
     int scoreInt = 0;
 
-    std::string scoreText;
+    std::string scoreText = "0";
 
     int highScoreInt = 0;
 
-    std::string highScoreText;
+    std::string highScoreText = "0";
     // Game Loop
+    
+    float randomAngle = angleDist(gen);
+
+    ballVelX = baseSpeed * std::cos(randomAngle);
+    ballVelY = baseSpeed * std::sin(randomAngle);
+
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
@@ -305,8 +319,7 @@ int main() {
 
         
 
-
-        float start_direction_ball = distrib(gen) * 720.0f;
+        
 
         if (state == GameState::game) {
             if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
@@ -353,18 +366,26 @@ int main() {
             float ballTop    = ballY + ballHalfSize;
 
             if ((ballRight >= paddleLeft) && (ballLeft <= paddleRight) &&
-                (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
-                ballVelY = -ballVelY;
-                float random_num = distrib(gen);
-                ballVelX += random_num;
-                scoreInt++;
-                scoreText = std::to_string(scoreInt);
-                
-                if (scoreInt > highScoreInt || scoreInt == highScoreInt) {
-                    highScoreInt = scoreInt;
-                    highScoreText = std::to_string(highScoreInt);
+            (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
+    
+                if (ballVelY > 0) {
+                    ballVelY = -ballVelY; // Reverse vertical direction
+        
+                    ballY = paddleBottom - ballHalfSize - 0.1f;
+
+                    float random_num = distrib(gen);
+                    ballVelX += random_num;
+        
+                    scoreInt++;
+                    scoreText = std::to_string(scoreInt);
+        
+                    if (scoreInt > highScoreInt) {
+                        highScoreInt = scoreInt;
+                        highScoreText = std::to_string(highScoreInt);
+                    }
                 }
             }
+            
             
             if ((ballY + ballHalfSize) > currentHeight) {
                 state = GameState::gameOver;
@@ -414,14 +435,20 @@ int main() {
                        renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
                        currentWidth / 2.0f - 70.0f, currentHeight / 2.0f - 60.0f, 
                        "Score:" + scoreText, 1.0f, cdata, currentWidth, currentHeight);
+                
+
 
             if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS) {
                 offsetX = 450.0f;
                 offsetY = 500.0f;
                 ballX = 450.0f;
-                ballY = 400.0f; // Fixed the assignment bug here
-                ballVelX = 5.0f;
-                ballVelY = 5.0f;
+                ballY = 400.0f; 
+
+
+                float randomAngle = angleDist(gen);
+                ballVelX = baseSpeed * std::cos(randomAngle);
+                ballVelY = baseSpeed * std::sin(randomAngle);
+
                 state = GameState::game;
                 scoreInt = 0;
                 scoreText = "0";
