@@ -104,6 +104,8 @@ int main() {
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> distrib(-0.5f, 0.5f);
 
+    std::uniform_real_distribution<float> colorDistrib(0.0f, 1.0f);
+
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW\n";
         return -1;
@@ -306,6 +308,10 @@ int main() {
     std::string highScoreText = "0";
     // Game Loop
     
+    float colorA = 0.5f;
+    float colorB = 0.5f;
+    float colorC = 0.5f;
+
     float randomAngle = angleDist(gen);
 
     ballVelX = baseSpeed * std::cos(randomAngle);
@@ -387,7 +393,11 @@ int main() {
                     // 2. Recalculate ball velocity maintaining direction
                     ballVelX += distrib(gen); // Small random variation
                     float currentSpeed = std::hypot(ballVelX, ballVelY);
-        
+                    
+                    colorA = colorDistrib(gen);
+                    colorB = colorDistrib(gen);
+                    colorC = colorDistrib(gen);
+
                     if (currentSpeed > 0.0001f) {
                         ballVelX = (ballVelX / currentSpeed) * targetBallSpeed;
                         ballVelY = (ballVelY / currentSpeed) * targetBallSpeed;
@@ -417,6 +427,12 @@ int main() {
             glUseProgram(shaderProgram);
             glUniform2f(glGetUniformLocation(shaderProgram, "screenSize"), currentWidth, currentHeight);
 
+            int colorLoc = glGetUniformLocation(shaderProgram, "objectColor");
+
+
+
+
+            glUniform4f(colorLoc, colorA, colorB, colorC, 1.0f);
             // Draw paddle
             glBindVertexArray(paddleVAO); 
             glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, offsetY);
