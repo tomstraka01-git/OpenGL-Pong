@@ -373,25 +373,28 @@ int main() {
 
             if ((ballRight >= paddleLeft) && (ballLeft <= paddleRight) &&
             (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
-    
+
                 if (ballVelY > 0) {
-                    ballVelY = -ballVelY; // Reverse vertical direction
-        
+                    ballVelY = -ballVelY; // Reverse vertical direction (now negative)
                     ballY = paddleBottom - ballHalfSize - 0.1f;
 
-                    float random_num = distrib(gen);
-                    ballVelX += random_num;
-        
                     scoreInt++;
                     scoreText = std::to_string(scoreInt);
 
-                    if (ballVelX < 10 || ballVelY < 10) {
-                    ballVelX *= std::pow(1.01f, scoreInt);
-                    ballVelY *= std::pow(1.01f, scoreInt);
-                    
-                    offsetSpeed *= std::pow(1.01f, scoreInt);
+                    // 1. Calculate target ball speed cleanly with a hard cap (e.g., max 14.0f)
+                    float targetBallSpeed = std::min(baseSpeed + (scoreInt * 0.35f), 14.0f);
 
+                    // 2. Recalculate ball velocity maintaining direction
+                    ballVelX += distrib(gen); // Small random variation
+                    float currentSpeed = std::hypot(ballVelX, ballVelY);
+        
+                    if (currentSpeed > 0.0001f) {
+                        ballVelX = (ballVelX / currentSpeed) * targetBallSpeed;
+                        ballVelY = (ballVelY / currentSpeed) * targetBallSpeed;
                     }
+
+                    // 3. Scale paddle speed cleanly with a hard cap (e.g., max 11.0f)
+                    offsetSpeed = std::min(5.0f + (scoreInt * 0.25f), 11.0f);
 
                     if (scoreInt > highScoreInt) {
                         highScoreInt = scoreInt;
