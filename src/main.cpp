@@ -14,7 +14,8 @@
 
 enum class GameState {
     game,
-    gameOver
+    gameOver,
+    pause
 };
 
 
@@ -317,6 +318,8 @@ int main() {
     ballVelX = baseSpeed * std::cos(randomAngle);
     ballVelY = baseSpeed * std::sin(randomAngle);
 
+    bool pKeyWasPressedLastFrame = false;
+
     while (!glfwWindowShouldClose(window)) {
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
             glfwSetWindowShouldClose(window, true);
@@ -328,9 +331,17 @@ int main() {
 
         float paddleHalfWidth = 160.0f; 
 
-        
-
-        
+        // Debounced Pause Key Check
+        bool pKeyIsPressed = (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS);
+        if (pKeyIsPressed && !pKeyWasPressedLastFrame) {
+            if (state == GameState::game) {
+                state = GameState::pause;
+            } 
+            else if (state == GameState::pause) {
+                state = GameState::game;
+            }
+        }
+        pKeyWasPressedLastFrame = pKeyIsPressed;
 
         if (state == GameState::game) {
             if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
@@ -366,7 +377,6 @@ int main() {
                 ballVelY += random_num;
             }
             
-            
             float paddleLeft   = offsetX - 60.0f;
             float paddleRight  = offsetX + 60.0f;
             float paddleBottom = offsetY - 10.0f;
@@ -387,11 +397,9 @@ int main() {
                     scoreInt++;
                     scoreText = std::to_string(scoreInt);
 
-                    // 1. Calculate target ball speed cleanly with a hard cap (e.g., max 14.0f)
                     float targetBallSpeed = std::min(baseSpeed + (scoreInt * 0.35f), 14.0f);
 
-                    // 2. Recalculate ball velocity maintaining direction
-                    ballVelX += distrib(gen); // Small random variation
+                    ballVelX += distrib(gen); 
                     float currentSpeed = std::hypot(ballVelX, ballVelY);
                     
                     colorA = colorDistrib(gen);
@@ -403,7 +411,6 @@ int main() {
                         ballVelY = (ballVelY / currentSpeed) * targetBallSpeed;
                     }
 
-                    // 3. Scale paddle speed cleanly with a hard cap (e.g., max 11.0f)
                     offsetSpeed = std::min(5.0f + (scoreInt * 0.25f), 11.0f);
 
                     if (scoreInt > highScoreInt) {
@@ -412,7 +419,6 @@ int main() {
                     }
                 }
             }
-            
             
             if ((ballY + ballHalfSize) > currentHeight) {
                 state = GameState::gameOver;
@@ -429,10 +435,8 @@ int main() {
 
             int colorLoc = glGetUniformLocation(shaderProgram, "objectColor");
 
-
-
-
             glUniform4f(colorLoc, colorA, colorB, colorC, 1.0f);
+            
             // Draw paddle
             glBindVertexArray(paddleVAO); 
             glUniform2f(glGetUniformLocation(shaderProgram, "pixelOffset"), offsetX, offsetY);
@@ -448,13 +452,22 @@ int main() {
 
             renderText(textShaderProgram, fontTexture, textVAO, textVBO, 25.0f, 90.0f, 
             "High score:" + highScoreText, 1.5f, cdata, currentWidth, currentHeight);
-            
         } 
+        else if (state == GameState::pause) {
+            glClearColor(0.1f, 0.15f, 0.2f, 1.0f);
+            glClear(GL_COLOR_BUFFER_BIT);
+
+            renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
+                       currentWidth / 2.0f - 80.0f, currentHeight / 2.0f - 20.0f, 
+                       "PAUSED", 1.0f, cdata, currentWidth, currentHeight);
+
+            renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
+                       currentWidth / 2.0f - 140.0f, currentHeight / 2.0f + 30.0f, 
+                       "PRESS P TO RESUME", 1.0f, cdata, currentWidth, currentHeight);
+        }
         else if (state == GameState::gameOver) {
             glClearColor(0.3f, 0.05f, 0.05f, 1.0f);
             glClear(GL_COLOR_BUFFER_BIT);
-            
-
             
             // Render Game Over text
             renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
@@ -465,18 +478,15 @@ int main() {
                        currentWidth / 2.0f - 140.0f, currentHeight / 2.0f + 30.0f, 
                        "PRESS R TO RESTART", 1.0f, cdata, currentWidth, currentHeight);
             
-                       renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
+            renderText(textShaderProgram, fontTexture, textVAO, textVBO, 
                        currentWidth / 2.0f - 70.0f, currentHeight / 2.0f - 60.0f, 
                        "Score:" + scoreText, 1.0f, cdata, currentWidth, currentHeight);
-                
-
 
             if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS) {
                 offsetX = 450.0f;
                 offsetY = 500.0f;
                 ballX = 450.0f;
                 ballY = 400.0f; 
-
 
                 float randomAngle = angleDist(gen);
                 ballVelX = baseSpeed * std::cos(randomAngle);
