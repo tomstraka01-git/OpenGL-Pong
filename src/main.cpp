@@ -350,7 +350,7 @@ int main() {
                     offsetX = paddleHalfWidth;
                 }
             }
-
+            
             if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
                 offsetX += offsetSpeed;
                 
@@ -365,16 +365,12 @@ int main() {
 
             if ((ballX + ballHalfSize) > currentWidth - 100 || (ballX - ballHalfSize) < 100) {
                 ballVelX = -ballVelX;
-                float random_num = distrib(gen);
-                ballVelX += random_num;
-                ballVelY += random_num;
+
             }
 
             if ((ballY - ballHalfSize) < 0) {
                 ballVelY = -ballVelY;
-                float random_num = distrib(gen);
-                ballVelX += random_num;
-                ballVelY += random_num;
+
             }
             
             float paddleLeft   = offsetX - 60.0f;
@@ -391,9 +387,15 @@ int main() {
             (ballTop >= paddleBottom) && (ballBottom <= paddleTop)) {
 
                 if (ballVelY > 0) {
-                    ballVelY = -ballVelY; // Reverse vertical direction (now negative)
+                    ballVelY = -ballVelY; // Reverse vertical direction 
                     ballY = paddleBottom - ballHalfSize - 0.1f;
 
+                    float positionOnPaddle = ballX - offsetX;
+
+                    ballVelX += positionOnPaddle / 30.0f;
+
+                    std::cout << positionOnPaddle << "\n";
+                    
                     scoreInt++;
                     scoreText = std::to_string(scoreInt);
 
@@ -410,6 +412,7 @@ int main() {
                         ballVelX = (ballVelX / currentSpeed) * targetBallSpeed;
                         ballVelY = (ballVelY / currentSpeed) * targetBallSpeed;
                     }
+                    
 
                     offsetSpeed = std::min(5.0f + (scoreInt * 0.25f), 11.0f);
 
