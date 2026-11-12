@@ -1,0 +1,4 @@
+rm -rf build-win
+mkdir build-win && cd build-win
+cmake -DCMAKE_TOOLCHAIN_FILE=../toolchain-mingw.cmake ..
+make

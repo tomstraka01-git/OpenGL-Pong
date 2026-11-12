@@ -142,7 +142,7 @@ int main() {
     stbtt_bakedchar cdata[96]; 
     unsigned int fontTexture = 0;
 
-    std::ifstream fontFile("/home/tom/Desktop/Projects/OpenGL-Pong/Roboto-VariableFont_wdth,wght.ttf", std::ios::binary);
+    std::ifstream fontFile("Roboto-VariableFont_wdth,wght.ttf", std::ios::binary);
     if (fontFile.is_open()) {
         fontFile.read((char*)ttf_buffer, sizeof(ttf_buffer));
         fontFile.close();
@@ -394,7 +394,7 @@ int main() {
 
                     ballVelX += positionOnPaddle / 30.0f;
 
-                    std::cout << positionOnPaddle << "\n";
+                   
                     
                     scoreInt++;
                     scoreText = std::to_string(scoreInt);

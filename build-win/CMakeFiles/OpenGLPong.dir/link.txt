@@ -1,0 +1,3 @@
+/usr/bin/cmake -E rm -f CMakeFiles/OpenGLPong.dir/objects.a
+/usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/OpenGLPong.dir/objects.a @CMakeFiles/OpenGLPong.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-g++ -Wl,--whole-archive CMakeFiles/OpenGLPong.dir/objects.a -Wl,--no-whole-archive -o OpenGLPong.exe -Wl,--out-implib,libOpenGLPong.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/OpenGLPong.dir/linkLibs.rsp
