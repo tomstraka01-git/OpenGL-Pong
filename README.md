@@ -53,5 +53,8 @@ GDK_BACKEND=x11 ./OpenGLPong
 
 You can compile it yourself or in releases there is compiled .exe
 
+[Windows exe](https://github.com/tomstraka01-git/OpenGL-Pong/releases)
+
 ## Does it end?
 No it doesnt it is going to run forever until you either close the game or you die, it gets harder each score.
+
